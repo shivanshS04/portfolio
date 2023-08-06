@@ -1,0 +1,240 @@
+@font-face {
+    font-family: oswald;
+    src: url(assets/Oswald-VariableFont_wght.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e3e0dd;
+    max-width: 100vw;
+    height: fit-content;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#AboutMe{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid darkgray;
+    border-bottom-left-radius: 32px;
+}
+
+#nav{
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: oswald;
+
+    & h1{
+        font-size: 25px;
+        font-weight: 700;
+        margin-right: 8px;
+        text-transform: uppercase;
+    }
+}
+
+#navLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.navLink{
+    color: darkgray;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all linear 0.45s;
+}
+
+.navLink:hover{
+    color:black
+}
+
+#contactMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    margin-right: 12px;
+    background-color: black;
+    color: #e3e0dd;
+    height: 100%;
+    padding-left:12px;
+    padding-right: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+
+#content{
+    display: flex;
+    flex-direction: row;
+}
+
+#heading{
+    font-family: oswald;
+    font-weight: 900;
+    font-size:12vw;
+    margin-left: 5vw;
+    margin-top: 4vh;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#heading::after{
+    content: url(assets/right-arrow-angle.png);
+    position: absolute;
+    width: 200px;
+    top: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#subHeading{
+    margin-top: 0;
+    font-family: sans-serif ;
+    font-weight: 800;
+    font-size: 3.5vw;
+    margin-left: 5vw;
+    margin-top: 4vh;
+    text-transform: uppercase;
+}
+
+#description{
+    margin-top: 30px;
+    color: darkgray;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: large;
+    margin-left: 5vw;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed darkgray;
+}
+
+#socials{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    gap: 20px;
+    font-size: 25px;
+}
+
+
+#pfp{
+    height: 100vh;
+}
+
+#skills ,#projects{
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+}
+
+
+#skills h1 , #projects h1{
+    font-family: oswald;
+    font-weight: 900;
+    font-size: 12vw;
+    margin-left: 5vw;
+    margin-top: 4vh;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#skillCards{
+    margin-left:5vw;
+}
+
+#card{
+    min-width: 300px ;
+    height: 17vh;
+    margin:30px;
+    float: left;
+    color: gray ;
+    padding: 25px;
+    border: 2.3px dashed gray;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: oswald;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#card:hover{
+    color:black;
+    border:2.3px dashed black;
+}
+
+
+#projects{
+    border-top: 1px gray solid;
+    border-top-left-radius: 30px;
+}
+
+
+@media screen and (max-width : 480px) {
+    #aboutMe{
+        padding-bottom: 30px;
+    }
+    #heading{
+        font-size: 20vw;
+        line-height: 20px;
+    }
+    #heading::after{
+        content: '';
+    }
+    #subHeading{
+        font-size: 6vw;
+    }
+    #nav h1{
+        font-size: 0;
+    }
+    #contact{
+        margin-left: 12px;
+    }
+    #content{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #pfp{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;        
+    }
+
+    #skills{
+        height: 150vh;
+        padding-bottom: 30px;
+    }
+}
