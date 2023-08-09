@@ -26,41 +26,40 @@ gsap.from("#skillCards", {
   opacity: 0,
 });
 
-gsap.from("#projectCards", {
-  scrollTrigger: {
-    trigger: ".projectCard",
-  },
-  y: 75,
-  x: -75,
-  duration: 1.5,
-  opacity: 0,
-});
+var width = window.innerWidth;
 
-const cursor = new MouseFollower();
-const project1 = document.getElementById("project1");
-const project2 = document.getElementById("project2");
-const project3 = document.getElementById("project3");
+window.onresize = () => {
+  window.location.reload();
+  return;
+};
 
-project1.addEventListener("mouseenter", () => {
-  cursor.setImg("assets/project1.png");
-});
+if (width > 480) {
+  const cursor = new MouseFollower();
+  const project1 = document.getElementById("project1");
+  const project2 = document.getElementById("project2");
+  const project3 = document.getElementById("project3");
 
-project1.addEventListener("mouseleave", () => {
-  cursor.removeImg();
-});
+  project1.addEventListener("mouseenter", () => {
+    cursor.setImg("assets/project1.png");
+  });
 
-project2.addEventListener("mouseenter", () => {
-  cursor.setImg("assets/project2.png");
-});
+  project1.addEventListener("mouseleave", () => {
+    cursor.removeImg();
+  });
 
-project2.addEventListener("mouseleave", () => {
-  cursor.removeImg();
-});
+  project2.addEventListener("mouseenter", () => {
+    cursor.setImg("assets/project2.png");
+  });
 
-project3.addEventListener("mouseenter", () => {
-  cursor.setImg("assets/project3.png");
-});
+  project2.addEventListener("mouseleave", () => {
+    cursor.removeImg();
+  });
 
-project3.addEventListener("mouseleave", () => {
-  cursor.removeImg();
-});
+  project3.addEventListener("mouseenter", () => {
+    cursor.setImg("assets/project3.png");
+  });
+
+  project3.addEventListener("mouseleave", () => {
+    cursor.removeImg();
+  });
+}
