@@ -36,7 +36,31 @@ gsap.from("#projectCards", {
   opacity: 0,
 });
 
-//dialog opening functionality
-document.getElementById("filesProject").addEventListener("click", () => {
-  document.getElementById("filesProjectDialog").showModal();
+const cursor = new MouseFollower();
+const project1 = document.getElementById("project1");
+const project2 = document.getElementById("project2");
+const project3 = document.getElementById("project3");
+
+project1.addEventListener("mouseenter", () => {
+  cursor.setImg("assets/project1.png");
+});
+
+project1.addEventListener("mouseleave", () => {
+  cursor.removeImg();
+});
+
+project2.addEventListener("mouseenter", () => {
+  cursor.setImg("assets/project2.png");
+});
+
+project2.addEventListener("mouseleave", () => {
+  cursor.removeImg();
+});
+
+project3.addEventListener("mouseenter", () => {
+  cursor.setImg("assets/project3.png");
+});
+
+project3.addEventListener("mouseleave", () => {
+  cursor.removeImg();
 });

@@ -196,6 +196,30 @@ body::-webkit-scrollbar {
     border:2.3px dashed black;
 }
 
+#showcase{
+    margin-top: 30px;
+}
+
+.projectRow{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-left: 2vw;
+    padding-right : 2vw;
+    font-family: monospace;
+    color: gray;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 1px solid gray;
+    text-transform: capitalize;
+}
+
+
+
 @media screen and (max-width : 480px) {
     #aboutMe{
         padding-bottom: 30px;
