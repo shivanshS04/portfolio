@@ -148,17 +148,16 @@ body::-webkit-scrollbar {
     height: 100vh;
 }
 
-#skills ,#projects{
+#skills{
     width: 100%;
-    min-height: 100vh;
-    height: 100vh;
+    height:100vh;
     margin: 0;
     padding: 0;
     padding-bottom: 25px;
 }
 
 
-#skills h1 , #projects h1{
+#skills h1 {
     font-family: oswald;
     font-weight: 900;
     font-size: 12vw;
@@ -166,13 +165,16 @@ body::-webkit-scrollbar {
     margin-top: 4vh;
     text-transform: uppercase;
     margin-bottom: 0;
+    border-bottom: 2.3px solid darkgray ;
+    border-bottom-left-radius: 20px;
+    padding-left: 10px;
 }
 
 #skillCards{
     margin-left:5vw;
 }
 
-#card{
+.card{
     min-width: 300px ;
     height: 17vh;
     margin:30px;
@@ -189,17 +191,10 @@ body::-webkit-scrollbar {
     font-weight: 600;
 }
 
-#card:hover{
+.card:hover{
     color:black;
     border:2.3px dashed black;
 }
-
-
-#projects{
-    border-top: 1px gray solid;
-    border-top-left-radius: 30px;
-}
-
 
 @media screen and (max-width : 480px) {
     #aboutMe{
@@ -230,6 +225,10 @@ body::-webkit-scrollbar {
         height: 300px;
         width: 300px;
         border-radius: 50%;        
+    }
+
+    #skillCards{
+        margin-left: 2vw;
     }
 
     #skills{

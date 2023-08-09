@@ -15,3 +15,28 @@ gsap.from("#pfp", {
   duration: 1.5,
   rotate: "-10%",
 });
+
+gsap.from("#skillCards", {
+  scrollTrigger: {
+    trigger: ".card",
+    scrub: 1,
+  },
+  y: 75,
+  x: 75,
+  opacity: 0,
+});
+
+gsap.from("#projectCards", {
+  scrollTrigger: {
+    trigger: ".projectCard",
+  },
+  y: 75,
+  x: -75,
+  duration: 1.5,
+  opacity: 0,
+});
+
+//dialog opening functionality
+document.getElementById("filesProject").addEventListener("click", () => {
+  document.getElementById("filesProjectDialog").showModal();
+});
