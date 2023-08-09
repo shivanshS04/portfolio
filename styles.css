@@ -157,7 +157,7 @@ body::-webkit-scrollbar {
 }
 
 
-#skills h1 {
+.sectionTitle{
     font-family: oswald;
     font-weight: 900;
     font-size: 12vw;
