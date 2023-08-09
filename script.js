@@ -35,6 +35,15 @@ gsap.from(".projectRow", {
   opacity: 0,
 });
 
+gsap.to("#showcase", {
+  scrollTrigger: {
+    trigger: "#certifications",
+    scrub: 0.5,
+  },
+  x: 100,
+  opacity: 0,
+});
+
 var width = window.innerWidth;
 
 window.onresize = () => {

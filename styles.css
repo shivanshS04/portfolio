@@ -148,7 +148,7 @@ body::-webkit-scrollbar {
     height: 100vh;
 }
 
-#skills , #projects{
+#skills , #projects , #certifications{
     width: 100%;
     height:100vh;
     margin: 0;
