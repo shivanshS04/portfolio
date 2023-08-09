@@ -26,6 +26,15 @@ gsap.from("#skillCards", {
   opacity: 0,
 });
 
+gsap.from(".projectRow", {
+  scrollTrigger: {
+    trigger: "#showcase",
+    scrub: 0.1,
+  },
+  x: -45,
+  opacity: 0,
+});
+
 var width = window.innerWidth;
 
 window.onresize = () => {

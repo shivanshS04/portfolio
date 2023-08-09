@@ -218,7 +218,10 @@ body::-webkit-scrollbar {
     text-transform: capitalize;
 }
 
-
+.projectRow:hover{
+    border-color: black;
+    color : black
+}
 
 @media screen and (max-width : 480px) {
     #aboutMe{
