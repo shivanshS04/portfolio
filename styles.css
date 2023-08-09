@@ -156,8 +156,6 @@ body::-webkit-scrollbar {
     padding-bottom: 25px;
 }
 
-
-.sectionTitle{
 .sectionTitle {
     font-family: oswald;
     font-weight: 900;
@@ -263,4 +261,5 @@ body::-webkit-scrollbar {
         height: 150vh;
         padding-bottom: 30px;
     }
+}
 }
