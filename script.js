@@ -47,8 +47,7 @@ gsap.to("#showcase", {
 var width = window.innerWidth;
 
 window.onresize = () => {
-  window.location.reload();
-  return;
+  width = window.innerWidth;
 };
 
 if (width > 480) {
